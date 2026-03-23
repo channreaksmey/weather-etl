@@ -57,6 +57,10 @@ def main():
     st.title("Weather Data Pipeline Dashboard")
     st.markdown("Real-time weather data from WeatherAPI")
     
+    if st.button("Refresh Data"):
+        st.cache_data.clear()
+        st.rerun()
+    
     # Load data
     try:
         df = load_data()

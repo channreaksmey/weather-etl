@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 
 # API Configuration
 API_KEY = os.getenv('WEATHERAPI_KEY', 'your_api_key_here')
-CITIES = ['London', 'New York', 'Tokyo', 'Singapore', 'Sydney']
+CITIES = ['London', 'New York', 'Tokyo', 'Singapore', 'Sydney', 'Phnom Penh', 'Hanoi', 'Singapore', 'Bangkok', 'Kuala Lumpur']
 BASE_URL = 'https://api.weatherapi.com/v1/current.json'
 
 def extract_weather_data(**context):
